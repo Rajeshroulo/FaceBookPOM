@@ -12,9 +12,7 @@ namespace facebook.PageObjects
         public FbloginPage(IWebDriver driver)
         {
             this.driver = driver;
-            PageFactory.InitElements(driver, this);
-           
-            
+            PageFactory.InitElements(driver, this);                      
         }
 
         [FindsBy(How = How.Id, Using = "email")]

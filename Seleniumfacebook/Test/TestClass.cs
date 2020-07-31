@@ -13,11 +13,18 @@ namespace Seleniumfacebook
     public class FaceBook : TestBase
     {
         [Test]
-        public void TestMethod()
+        public void TestLoginAndLogout()
         {
            var loginpage= new FbloginPage(driver);
-            loginpage.Login();
-            Thread.Sleep(5000);
+             loginpage.Login();
+
+            var homepage = new FbHomePage(driver);
+            homepage.Logout();
+            Thread.Sleep(2000);
             }
+
+       
+        
+
     }
 }

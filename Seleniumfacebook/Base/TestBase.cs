@@ -25,9 +25,9 @@ namespace facebook
         [TearDown]
         public void CloseBrowser()
         {
-            Thread.Sleep(9000);
+            Thread.Sleep(5000);
             driver.Quit();
-        } 
+        }
 
     }
 }
