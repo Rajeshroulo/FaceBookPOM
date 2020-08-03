@@ -12,8 +12,12 @@ C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\bin\Debug\nunit.frame
 C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\bin\Debug\nunit.framework.xml
 C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\bin\Debug\WebDriver.xml
 C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\bin\Debug\WebDriver.Support.xml
-C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\obj\Debug\Seleniumfacebook.csprojAssemblyReference.cache
 C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\obj\Debug\Seleniumfacebook.csproj.CoreCompileInputs.cache
 C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\obj\Debug\Seleniumfacebook.csproj.CopyComplete
 C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\obj\Debug\Seleniumfacebook.dll
 C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\obj\Debug\Seleniumfacebook.pdb
+C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\bin\Debug\Dapper.dll
+C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\bin\Debug\System.Data.OleDb.dll
+C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\bin\Debug\Dapper.xml
+C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\bin\Debug\System.Data.OleDb.xml
+C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\obj\Debug\Seleniumfacebook.csprojAssemblyReference.cache

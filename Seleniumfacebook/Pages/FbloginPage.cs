@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
+using Seleniumfacebook.TestDataAccess;
 
 namespace facebook.PageObjects
 {
@@ -29,8 +30,8 @@ namespace facebook.PageObjects
 
         public void Login()
         {
-            mail.SendKeys("9542048044");
-            password.SendKeys("djrajesh");
+            mail.SendKeys(ExcelDataAccess.GetTestData("TestLoginAndLogout").email);
+            password.SendKeys(ExcelDataAccess.GetTestData("TestLoginAndLogout").password);
             loginButton.Click();
         }
     }

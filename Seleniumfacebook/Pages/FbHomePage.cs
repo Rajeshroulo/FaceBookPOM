@@ -9,7 +9,7 @@ using OpenQA.Selenium.Support.PageObjects;
 namespace facebook
 {
    public class FbHomePage
-    {
+   {
         IWebDriver driver;
 
         public FbHomePage(IWebDriver driver)
@@ -18,19 +18,18 @@ namespace facebook
             PageFactory.InitElements(driver, this);
         }
 
-        [FindsBy(How = How.XPath, Using ="//div[text()='Account Settings']")]
+        [FindsBy(How = How.ClassName, Using = "hu5pjgll lzf7d6o1 sp_9v2_9kG0o8E sx_8a7360")]
 
         public IWebElement dropdown { get; set; }
 
-        [FindsBy(How = How.LinkText, Using ="Log Out")]
+       
 
-        public IWebElement logoutButton { get; set; }
 
-        public void Logout()
+
+        public void Create()
         {
-            Thread.Sleep(2000);
+            Thread.Sleep(3000);
             dropdown.Click();
-            logoutButton.Click();
         }
 
     }

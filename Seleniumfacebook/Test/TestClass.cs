@@ -18,13 +18,12 @@ namespace Seleniumfacebook
            var loginpage= new FbloginPage(driver);
              loginpage.Login();
 
-            var homepage = new FbHomePage(driver);
-            homepage.Logout();
-            Thread.Sleep(2000);
-            }
+           
 
-       
-        
+        }
+
+
+
 
     }
 }

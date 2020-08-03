@@ -10,7 +10,7 @@ using System.Threading;
 namespace facebook
 {
   public  class TestBase
-    {
+  {
       public  IWebDriver driver;
 
         [SetUp]
@@ -29,5 +29,5 @@ namespace facebook
             driver.Quit();
         }
 
-    }
+  }
 }
