@@ -1,15 +1,11 @@
 ﻿using Dapper;
-using System;
-using System.Collections.Generic;
 using System.Data.OleDb;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Seleniumfacebook.TestDataAccess
 {
-   public class ExcelDataAccess
-   {
+    public class ExcelDataAccess
+    {
         public static string TestDataFileConnection()
         {
             var fileName = @"C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\TestDataAccess\TestData.xlsx";
@@ -29,5 +25,5 @@ namespace Seleniumfacebook.TestDataAccess
             }
         }
 
-   }
+    }
 }

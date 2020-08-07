@@ -8,7 +8,7 @@ namespace facebook.PageObjects
     public class FbloginPage
     {
 
-        IWebDriver driver;
+       public IWebDriver driver;
 
         public FbloginPage(IWebDriver driver)
         {
@@ -34,5 +34,6 @@ namespace facebook.PageObjects
             password.SendKeys(ExcelDataAccess.GetTestData("TestLoginAndLogout").password);
             loginButton.Click();
         }
+
     }
 }

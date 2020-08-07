@@ -8,6 +8,6 @@ namespace Seleniumfacebook.TestDataAccess
         public String email { get; set; }
         public String password { get; set; }
 
-    }
+    } 
 
 }
