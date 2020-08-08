@@ -16,7 +16,7 @@ namespace Seleniumfacebook
              loginpage.Login();
 
             var homepage = new FbHomePage(driver);
-            homepage.Create();
+            homepage.Created();
 
         }
 
