@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using Seleniumfacebook.TestDataAccess;
+using System.Threading;
 
 namespace facebook.PageObjects
 {
@@ -18,21 +19,22 @@ namespace facebook.PageObjects
 
         [FindsBy(How = How.Id, Using = "email")]
 
-        public IWebElement mail { get; set; }
+        public IWebElement Mail { get; set; }
 
         [FindsBy(How = How.Id, Using = "pass")]
 
-        public IWebElement password { get; set; }
+        public IWebElement Password { get; set; }
 
         [FindsBy(How = How.XPath, Using = "//input[@type='submit'][@value ='Log In']")]
 
-        public IWebElement loginButton { get; set; }
+        public IWebElement LoginButton { get; set; }
 
         public void Login()
         {
-            mail.SendKeys(ExcelDataAccess.GetTestData("TestLoginAndLogout").email);
-            password.SendKeys(ExcelDataAccess.GetTestData("TestLoginAndLogout").password);
-            loginButton.Click();
+            Mail.SendKeys(ExcelDataAccess.GetTestData("TestLoginAndLogout").email);
+            Password.SendKeys(ExcelDataAccess.GetTestData("TestLoginAndLogout").password);
+            LoginButton.Click();
+            Thread.Sleep(80000);
         }
 
     }

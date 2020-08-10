@@ -20,4 +20,5 @@ C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\bin\Debug\Dapper.dll
 C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\bin\Debug\System.Data.OleDb.dll
 C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\bin\Debug\Dapper.xml
 C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\bin\Debug\System.Data.OleDb.xml
-C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\obj\Debug\Seleniumfacebook.csprojAssemblyReference.cache
+C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\obj\Debug\Interop.AutoItX3Lib.dll
+C:\Users\HP\source\repos\Seleniumfacebook\Seleniumfacebook\obj\Debug\Seleniumfacebook.csproj.ResolveComReference.cache
