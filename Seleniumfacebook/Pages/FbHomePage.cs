@@ -15,27 +15,25 @@ namespace facebook
             PageFactory.InitElements(driver, this);
         }
 
-        [FindsBy(How = How.XPath, Using = "//*[@id='mount_0_0']/div/div/div[1]/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div[3]/div/div[2]/div/div/div/div[1]/div/div[1]/div")]
+        [FindsBy(How = How.XPath, Using = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]")]
+        public IWebElement Create;
 
-        public IWebElement Create { get; set; }
+        [FindsBy(How = How.XPath, Using = "//div[@class='_1mf _1mj']")]
+        public IWebElement Content;
 
-        [FindsBy(How = How.XPath, Using = "//*[@id='mount_0_0']/div/div/div[1]/div[4]/div/div/div[1]/div/div[2]/div/div/div/form/div/div[1]/div/div[2]/div[2]/div[1]/div[1]/div[1]/div/div/div/div/div[2]/div/div/div/div")]
-       
-        public IWebElement Content { get; set; }
+        [FindsBy(How = How.XPath, Using = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[2]/span[1]/div[1]/div[1]/div[1]/div[1]/div[1]/i[1]")]
+        public IWebElement Photo;
 
-        [FindsBy(How = How.XPath, Using = "//*[@id='mount_0_0']/div/div/div[1]/div[4]/div/div/div[1]/div/div[2]/div/div/div/form/div/div[1]/div/div[2]/div[3]/div[1]/div[2]/div/div[2]/span/div/div/div/div/div[1]/i")]
+        [FindsBy(How = How.XPath, Using = "//div[contains(text(),'Post')]")]
+        public IWebElement Post;
 
-        public IWebElement Photo { get; set; }
-
-        [FindsBy(How = How.XPath, Using = "//*[@id='mount_0_0']/div/div/div[1]/div[4]/div/div/div[1]/div/div[2]/div/div/div/form/div/div[1]/div/div[2]/div[3]/div[2]/div")]
-
-        public IWebElement Post { get; set; }
-
-        public void Created()
+        public void PostStory()
         {
+            Thread.Sleep(3000);
             Create.Click();
             Thread.Sleep(2000);
-            Content.SendKeys("Working on automation");
+            Content.SendKeys("automation");
+            Thread.Sleep(5000);
             Photo.Click();
 
             AutoItX3 autoIt = new AutoItX3();
@@ -46,6 +44,7 @@ namespace facebook
             Thread.Sleep(1000);
             autoIt.Send("{ENTER}");
 
+            Thread.Sleep(5000);
             Post.Click();
         }
 

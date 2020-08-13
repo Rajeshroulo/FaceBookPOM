@@ -5,22 +5,21 @@ using System.Threading;
 
 namespace facebook
 {
-    public  class TestBase
+    public  class FBBase
     {
       public  IWebDriver driver;
 
-        [SetUp]
+        [OneTimeSetUp]
         public void Initialize()
         {
             ChromeOptions options = new ChromeOptions();
-            options.AddArguments("--disable-notifications");
+            options.AddArguments("--disable-notifications", "start-maximized");
 
             driver = new ChromeDriver(options);
             driver.Url = "http://www.facebook.com/";
-            driver.Manage().Window.Maximize();           
         }
 
-        [TearDown]
+        [OneTimeTearDown]
         public void CloseBrowser()
         {
             Thread.Sleep(5000);

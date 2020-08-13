@@ -25,7 +25,7 @@ namespace facebook.PageObjects
 
         public IWebElement Password { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "//input[@type='submit'][@value ='Log In']")]
+        [FindsBy(How = How.XPath, Using = "//button[@type='submit'][@name ='login']")]
 
         public IWebElement LoginButton { get; set; }
 
@@ -34,7 +34,6 @@ namespace facebook.PageObjects
             Mail.SendKeys(ExcelDataAccess.GetTestData("TestLoginAndLogout").email);
             Password.SendKeys(ExcelDataAccess.GetTestData("TestLoginAndLogout").password);
             LoginButton.Click();
-            Thread.Sleep(80000);
         }
 
     }

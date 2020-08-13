@@ -3,25 +3,30 @@
 using facebook;
 using facebook.PageObjects;
 using NUnit.Framework;
+using System;
 
 namespace Seleniumfacebook
 {
     [TestFixture]
-    public class FaceBook : TestBase
+    public class FaceBook : FBBase
     {
-        [Test]
-        public void TestLoginAndLogout()
+        [Test,Order(1)]
+        public void FaceBookLogin()
         {
-           var loginpage= new FbloginPage(driver);
-             loginpage.Login();
+            var loginpage = new FbloginPage(driver);
+            loginpage.Login();
 
-            var homepage = new FbHomePage(driver);
-            homepage.Created();
-
+            Assert.AreEqual("Facebook – log in or sign up", driver.Title);
         }
 
+        [Test,Order(2)]
+        public void PostAStory()
+        {
+           
+            var homepage = new FbHomePage(driver);
+            homepage.PostStory();
 
-
+        }
 
     }
 }
