@@ -15,8 +15,6 @@ namespace Seleniumfacebook
         {
             var loginpage = new FbloginPage(driver);
             loginpage.Login();
-
-            Assert.AreEqual("Facebook – log in or sign up", driver.Title);
         }
 
         [Test,Order(2)]
@@ -25,6 +23,8 @@ namespace Seleniumfacebook
            
             var homepage = new FbHomePage(driver);
             homepage.PostStory();
+
+            Assert.AreEqual("(15) Facebook", driver.Title);
 
         }
 
