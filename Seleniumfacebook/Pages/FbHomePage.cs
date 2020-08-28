@@ -36,19 +36,14 @@ namespace facebook
             Content.SendKeys("automation");
             Thread.Sleep(5000);
             Photo.Click();
-
             AutoItX3 autoIt = new AutoItX3();
             autoIt.WinActivate("Open");
             Thread.Sleep(2000);
-
             autoIt.Send(@"C:\Users\HP\Downloads\automation.jpg");
-
             Thread.Sleep(5000);
             autoIt.Send("{ENTER}");
-
             Thread.Sleep(5000);
             Post.Click();
         }
-
     }
 }

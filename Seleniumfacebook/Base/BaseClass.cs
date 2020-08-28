@@ -14,7 +14,6 @@ namespace facebook
         {
             ChromeOptions options = new ChromeOptions();
             options.AddArguments("--disable-notifications", "start-maximized");
-
             driver = new ChromeDriver(options);
             driver.Url = "http://www.facebook.com/";
         }
@@ -25,6 +24,5 @@ namespace facebook
             Thread.Sleep(5000);
             driver.Quit();
         }
-
     }
 }

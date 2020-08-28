@@ -71,7 +71,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base\FBBase.cs" />
+    <Compile Include="Base\BaseClass.cs" />
     <Compile Include="Pages\FbHomePage.cs" />
     <Compile Include="Pages\FbloginPage.cs" />
     <Compile Include="TestDataAccess\ExcelDataAccess.cs" />

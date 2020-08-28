@@ -24,6 +24,5 @@ namespace Seleniumfacebook.TestDataAccess
                 return value;
             }
         }
-
     }
 }

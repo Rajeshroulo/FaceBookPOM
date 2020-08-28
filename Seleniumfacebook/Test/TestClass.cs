@@ -19,14 +19,10 @@ namespace Seleniumfacebook
 
         [Test,Order(2)]
         public void PostAStory()
-        {
-           
+        {           
             var homepage = new FbHomePage(driver);
             homepage.PostStory();
-
             Assert.AreEqual("(15) Facebook", driver.Title);
-
         }
-
     }
 }

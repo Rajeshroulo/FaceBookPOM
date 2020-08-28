@@ -8,7 +8,6 @@ namespace facebook.PageObjects
 
     public class FbloginPage
     {
-
        public IWebDriver driver;
 
         public FbloginPage(IWebDriver driver)
@@ -17,16 +16,13 @@ namespace facebook.PageObjects
             PageFactory.InitElements(driver, this);                      
         }
 
-        [FindsBy(How = How.Id, Using = "email")]
-
+        [FindsBy(How = How.Id, Using = "email")]        
         public IWebElement Mail { get; set; }
-
+        
         [FindsBy(How = How.Id, Using = "pass")]
-
         public IWebElement Password { get; set; }
-
+       
         [FindsBy(How = How.XPath, Using = "//button[@type='submit'][@name ='login']")]
-
         public IWebElement LoginButton { get; set; }
 
         public void Login()
@@ -35,6 +31,5 @@ namespace facebook.PageObjects
             Password.SendKeys(ExcelDataAccess.GetTestData("TestLoginAndLogout").password);
             LoginButton.Click();
         }
-
     }
 }
